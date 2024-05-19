@@ -60,3 +60,10 @@ console.log(Number.isNaN(NaN));       // true
 console.log(Number.isFinite(10));     // true
 console.log(Number.isInteger(5));     // true
 console.log(Number.isSafeInteger(5)); // true
+
+
+let bigInt = 1234567890123456789012345678901234567890n;
+console.log(bigInt);                 // 1234567890123456789012345678901234567890n
+console.log(bigInt + 10n);           // 1234567890123456789012345678901234567900n
+console.log(bigInt * 2n);            // 2469135780246913578024691357802469135780n
+
