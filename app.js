@@ -49,3 +49,14 @@ console.log(Math.log10(100));        // 2
 console.log(Math.log2(8));           // 3
 
 console.log(Math.hypot(3, 4));       // 5
+
+console.log(Number.MAX_VALUE);       // 1.7976931348623157e+308
+console.log(Number.MIN_VALUE);       // 5e-324
+console.log(Number.POSITIVE_INFINITY); // Infinity
+console.log(Number.NEGATIVE_INFINITY); // -Infinity
+console.log(Number.NaN);              // NaN
+
+console.log(Number.isNaN(NaN));       // true
+console.log(Number.isFinite(10));     // true
+console.log(Number.isInteger(5));     // true
+console.log(Number.isSafeInteger(5)); // true
