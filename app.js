@@ -76,3 +76,16 @@ console.log(now.getDay());           // 0 (Sonntag)
 console.log(now.getHours());         // 12
 console.log(now.getMinutes());       // 30
 console.log(now.getSeconds());       // 45
+
+let number = 1234567.89;
+let formatter = new Intl.NumberFormat('de-DE', {
+  style: 'currency',
+  currency: 'EUR',
+});
+console.log(formatter.format(number)); // 1.234.567,89 €
+
+let percentFormatter = new Intl.NumberFormat('en-US', {
+  style: 'percent',
+  maximumFractionDigits: 2,
+});
+console.log(percentFormatter.format(0.1234)); // 12.34%
