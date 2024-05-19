@@ -89,3 +89,10 @@ let percentFormatter = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 2,
 });
 console.log(percentFormatter.format(0.1234)); // 12.34%
+
+let intArray = new Int16Array([10, 20, 30]);
+console.log(intArray);               // Int16Array [10, 20, 30]
+
+let floatArray = new Float32Array([10.5, 20.5, 30.5]);
+console.log(floatArray);             // Float32Array [10.5, 20.5, 30.5]
+
