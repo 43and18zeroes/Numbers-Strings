@@ -105,3 +105,8 @@ console.log(arr.map(x => x * 2)); // [2, 4, 6, 8, 10]
 let map = new Map();
 map.set('key1', 'value1');
 console.log(map.get('key1')); // value1
+
+let set = new Set([1, 2, 3, 4, 4]);
+console.log(set.has(4)); // true
+console.log(set.size); // 4
+
