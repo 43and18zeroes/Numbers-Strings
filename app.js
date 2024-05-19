@@ -101,3 +101,7 @@ console.log(regex.test("Hello World")); // true
 
 let arr = [1, 2, 3, 4, 5];
 console.log(arr.map(x => x * 2)); // [2, 4, 6, 8, 10]
+
+let map = new Map();
+map.set('key1', 'value1');
+console.log(map.get('key1')); // value1
