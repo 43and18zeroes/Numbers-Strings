@@ -110,3 +110,7 @@ let set = new Set([1, 2, 3, 4, 4]);
 console.log(set.has(4)); // true
 console.log(set.size); // 4
 
+let weakMap = new WeakMap();
+let obj = {};
+weakMap.set(obj, 'value');
+console.log(weakMap.get(obj)); // value
