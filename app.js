@@ -114,3 +114,8 @@ let weakMap = new WeakMap();
 let obj = {};
 weakMap.set(obj, 'value');
 console.log(weakMap.get(obj)); // value
+
+let buffer = new ArrayBuffer(16);
+let view = new DataView(buffer);
+view.setInt8(0, 42);
+console.log(view.getInt8(0)); // 42
