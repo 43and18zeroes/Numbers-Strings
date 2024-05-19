@@ -67,3 +67,12 @@ console.log(bigInt);                 // 1234567890123456789012345678901234567890
 console.log(bigInt + 10n);           // 1234567890123456789012345678901234567900n
 console.log(bigInt * 2n);            // 2469135780246913578024691357802469135780n
 
+let now = new Date();
+console.log(now);                    // Aktuelles Datum und Uhrzeit
+console.log(now.getFullYear());      // 2024
+console.log(now.getMonth());         // 4 (Mai, da Monate von 0-11 gehen)
+console.log(now.getDate());          // 19
+console.log(now.getDay());           // 0 (Sonntag)
+console.log(now.getHours());         // 12
+console.log(now.getMinutes());       // 30
+console.log(now.getSeconds());       // 45
