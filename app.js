@@ -98,3 +98,6 @@ console.log(floatArray);             // Float32Array [10.5, 20.5, 30.5]
 
 let regex = /hello/i;
 console.log(regex.test("Hello World")); // true
+
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.map(x => x * 2)); // [2, 4, 6, 8, 10]
