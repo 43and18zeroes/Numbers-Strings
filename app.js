@@ -67,3 +67,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+const inputs = document.querySelectorAll('.key-input');
+
+inputs.forEach((input, index) => {
+  input.addEventListener('paste', e => {
+    e.preventDefault();
+    const pasteData = (e.clipboardData || window.clipboardData).getData('text');
+    if (pasteData.length === inputs.length) {
+      inputs.forEach((field, idx) => {
+        field.value = pasteData[idx] || '';
+      });
+    } else {
+      alert(
+        'Der kopierte Schlüssel muss genau ' +
+          inputs.length +
+          ' Zeichen lang sein.'
+      );
+    }
+  });
+
+  input.addEventListener('input', e => {
+    if (input.value.length > 1) {
+      input.value = input.value.charAt(0);
+    }
+    if (input.value.length === 1 && index < inputs.length - 1) {
+      inputs[index + 1].focus();
+    }
+  });
+
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Backspace' && input.value === '' && index > 0) {
+      inputs[index - 1].focus();
+    }
+  });
+});
