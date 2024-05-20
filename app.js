@@ -14,3 +14,12 @@ const numbers = [1, 2, 3, 4, 5];
 numbers.forEach(function(number) {
   console.log(number);
 });
+
+// Definition der Callback-Funktion
+function logNumber(number) {
+    console.log(number);
+  }
+  
+  // Verwendung der Callback-Funktion
+  const numbers2 = [1, 2, 3, 4, 5];
+  numbers.forEach(logNumber);
