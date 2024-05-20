@@ -30,3 +30,40 @@ const numbers3 = [1, 2, 3, 4, 5];
 numbers.forEach(function (number) {
   console.log(number);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const keyInput = document.getElementById('keyInput');
+  const fields = [
+    document.getElementById('field1'),
+    document.getElementById('field2'),
+    document.getElementById('field3'),
+  ];
+
+  keyInput.addEventListener('input', () => {
+    const key = keyInput.value;
+
+    fields.forEach((field, index) => {
+      field.value = key.slice(
+        index * (key.length / fields.length),
+        (index + 1) * (key.length / fields.length)
+      );
+    });
+  });
+
+  keyInput.addEventListener('paste', event => {
+    event.preventDefault();
+
+    const pasteData = (event.clipboardData || window.clipboardData).getData(
+      'text'
+    );
+
+    keyInput.value = pasteData;
+
+    fields.forEach((field, index) => {
+      field.value = pasteData.slice(
+        index * (pasteData.length / fields.length),
+        (index + 1) * (pasteData.length / fields.length)
+      );
+    });
+  });
+});
