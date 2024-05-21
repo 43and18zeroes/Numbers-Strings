@@ -39,3 +39,5 @@ console.log(Math.sqrt(25)); // 5
 console.log(Math.sin(25)); // -0.13235175009777303
 console.log(Math.pow(5, 2)); // 25
 console.log(Math.abs(-5)); // 2
+
+console.log(Math.random()); // 0.8768514271439896
