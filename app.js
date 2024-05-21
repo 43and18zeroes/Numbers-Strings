@@ -25,3 +25,10 @@ console.log(10n - 4n); // 6n
 console.log(parseInt(10n) - 4); // 6
 console.log(10n - BigInt(4)); // 6n
 console.log(5n / 3n); // 1n
+
+console.log(Number.POSITIVE_INFINITY); // Infinity
+console.log(Infinity); // Infinity
+console.log(-Infinity); // -Infinity
+console.log(1/0); // Infinity
+console.log(Number.isFinite(10)); // true
+console.log(Number.isFinite(Infinity)); // false
