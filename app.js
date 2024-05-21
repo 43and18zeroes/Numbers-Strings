@@ -43,10 +43,17 @@
 // console.log(Math.random()); // 0.8768514271439896
 
 
-function randomIntBetween(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
+// function randomIntBetween(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1) + min);
+// }
 
-for (let index = 0; index < 20; index++) {
-    console.log(randomIntBetween(1, 10));    
-}
+// for (let index = 0; index < 20; index++) {
+//     console.log(randomIntBetween(1, 10));    
+// }
+
+// const randomIntBetween2 = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+
+// Array.from({ length: 20 }).forEach(() => console.log(randomIntBetween2(1, 10)));
+
+// console.log(Array.from({ length: 5 })); // [undefined, undefined, undefined, undefined, undefined]
+
