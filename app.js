@@ -24,3 +24,4 @@ console.log(9007199254740992000n); // 9007199254740992000n
 console.log(10n - 4n); // 6n
 console.log(parseInt(10n) - 4); // 6
 console.log(10n - BigInt(4)); // 6n
+console.log(5n / 3n); // 1n
