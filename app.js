@@ -10,3 +10,5 @@ console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
 
 console.log(0.2 + 0.4); // 0.6000000000000001
 
+console.log(0.2 + 0.4 === 0.6);// false
+
