@@ -19,3 +19,8 @@ console.log((0.2).toFixed(20)); // 0.20000000000000001110
 console.log((0.2 + 0.4).toFixed(2)); // 0.60
 
 console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
+console.log(Number.MAX_SAFE_INTEGER + 1000); // 9007199254740992
+console.log(9007199254740992000n); // 9007199254740992000n
+console.log(10n - 4n); // 6n
+console.log(parseInt(10n) - 4); // 6
+console.log(10n - BigInt(4)); // 6n
