@@ -29,6 +29,13 @@ console.log(5n / 3n); // 1n
 console.log(Number.POSITIVE_INFINITY); // Infinity
 console.log(Infinity); // Infinity
 console.log(-Infinity); // -Infinity
-console.log(1/0); // Infinity
+console.log(1 / 0); // Infinity
 console.log(Number.isFinite(10)); // true
 console.log(Number.isFinite(Infinity)); // false
+
+console.log(Math.E); // 2.718281828459045
+console.log(Math.PI); // 3.141592653589793
+console.log(Math.sqrt(25)); // 5
+console.log(Math.sin(25)); // -0.13235175009777303
+console.log(Math.pow(5, 2)); // 25
+console.log(Math.abs(-5)); // 2
