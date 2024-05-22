@@ -67,15 +67,16 @@ function productDescription(strings, productName, productPrice) {
   console.log('productName', productName);
   console.log('productPrice', productPrice);
 
-  let priceCategory = 'cheap';
-  if (productPrice > 20) {
-    priceCategory = 'fair';
-  }
+  let priceCategory = 'cheap cheap regarding its price';
+//   if (productPrice > 20) {
+//     priceCategory = 'fairly priced';
+//   }
+  productPrice > 20 ? priceCategory = 'fairly priced' : priceCategory;
   return `${strings[0]}${productName}${strings[1]}${priceCategory}${strings[2]}`;
 }
 
 const prodName = 'JavaScript Course';
 const productPrice = 29.99;
 
-const productOutput = productDescription`This product (${prodName}) ist ${productPrice}.`;
+const productOutput = productDescription`This product (${prodName}) is ${productPrice}.`;
 console.log('productOutput', productOutput);
