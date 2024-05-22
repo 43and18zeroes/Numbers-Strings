@@ -72,5 +72,5 @@ function productDescription(strings, productName, productPrice) {
 const prodName = 'JavaScript Course';
 const productPrice = 29.99;
 
-const productOutput = productDescription`This product (${prodName}) ist ${productPrice}`;
+const productOutput = productDescription`This product (${prodName}) ist ${productPrice}.`;
 console.log('productOutput', productOutput);
