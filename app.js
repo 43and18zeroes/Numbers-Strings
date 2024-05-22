@@ -66,7 +66,12 @@ function productDescription(strings, productName, productPrice) {
   console.log('strings', strings);
   console.log('productName', productName);
   console.log('productPrice', productPrice);
-  return 'This is a products';
+
+  let priceCategory = 'cheap';
+  if (productPrice > 20) {
+    priceCategory = 'fair';
+  }
+  return `${strings[0]}${productName}${strings[1]}${priceCategory}${strings[2]}`;
 }
 
 const prodName = 'JavaScript Course';
