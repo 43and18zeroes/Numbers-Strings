@@ -86,4 +86,8 @@ const regex = /^\S+@\S+\.\S+$/;
 console.log(regex.test('myemail')); // true
 console.log(regex.test('test@test.de')); // false
 
+const regex2 = /hello/;
+console.log(regex2.test('hello')); // true
+console.log(regex2.test('hi there, hello')); // true
+console.log(regex2.test('hi there, hello ...')); // true
 
