@@ -42,13 +42,12 @@
 
 // console.log(Math.random()); // 0.8768514271439896
 
-
 // function randomIntBetween(min, max) {
 //     return Math.floor(Math.random() * (max - min + 1) + min);
 // }
 
 // for (let index = 0; index < 20; index++) {
-//     console.log(randomIntBetween(1, 10));    
+//     console.log(randomIntBetween(1, 10));
 // }
 
 // const randomIntBetween2 = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
@@ -62,3 +61,7 @@ console.log(''.length); // 0
 console.log('hello'.toLocaleUpperCase()); // HELLO
 console.log('HELLO'.toLowerCase()); // hello
 console.log('hello'.startsWith('he')); // true
+
+function productDescription(strings, productName, productPrice) {
+  return 'This is a products';
+}
