@@ -56,11 +56,11 @@
 
 // console.log(Array.from({ length: 5 })); // [undefined, undefined, undefined, undefined, undefined]
 
-console.log(`${1}`); // 1
-console.log(''.length); // 0
-console.log('hello'.toLocaleUpperCase()); // HELLO
-console.log('HELLO'.toLowerCase()); // hello
-console.log('hello'.startsWith('he')); // true
+// console.log(`${1}`); // 1
+// console.log(''.length); // 0
+// console.log('hello'.toLocaleUpperCase()); // HELLO
+// console.log('HELLO'.toLowerCase()); // hello
+// console.log('hello'.startsWith('he')); // true
 
 function productDescription(strings, productName, productPrice) {
   return 'This is a products';
