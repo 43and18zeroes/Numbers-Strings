@@ -62,22 +62,28 @@
 // console.log('HELLO'.toLowerCase()); // hello
 // console.log('hello'.startsWith('he')); // true
 
-function productDescription(strings, productName, productPrice) {
-  console.log('strings', strings);
-  console.log('productName', productName);
-  console.log('productPrice', productPrice);
+// function productDescription(strings, productName, productPrice) {
+//   console.log('strings', strings);
+//   console.log('productName', productName);
+//   console.log('productPrice', productPrice);
 
-  let priceCategory = 'cheap cheap regarding its price';
-//   if (productPrice > 20) {
-//     priceCategory = 'fairly priced';
-//   }
-  productPrice > 20 ? priceCategory = 'fairly priced' : priceCategory;
-//   return `${strings[0]}${productName}${strings[1]}${priceCategory}${strings[2]}`;
-return {name: productName, price: productPrice};
-}
+//   let priceCategory = 'cheap cheap regarding its price';
+// //   if (productPrice > 20) {
+// //     priceCategory = 'fairly priced';
+// //   }
+//   productPrice > 20 ? priceCategory = 'fairly priced' : priceCategory;
+// //   return `${strings[0]}${productName}${strings[1]}${priceCategory}${strings[2]}`;
+// return {name: productName, price: productPrice};
+// }
 
-const prodName = 'JavaScript Course';
-const productPrice = 29.99;
+// const prodName = 'JavaScript Course';
+// const productPrice = 29.99;
 
-const productOutput = productDescription`This product (${prodName}) is ${productPrice}.`;
-console.log('productOutput', productOutput);
+// const productOutput = productDescription`This product (${prodName}) is ${productPrice}.`;
+// console.log('productOutput', productOutput);
+
+const regex = /^\S+@\S+\.\S+$/;
+console.log(regex.test('myemail')); // true
+console.log(regex.test('test@test.de')); // false
+
+
