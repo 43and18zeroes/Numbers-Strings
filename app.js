@@ -63,6 +63,9 @@
 // console.log('hello'.startsWith('he')); // true
 
 function productDescription(strings, productName, productPrice) {
+  console.log('strings', strings);
+  console.log('productName', productName);
+  console.log('productPrice', productPrice);
   return 'This is a products';
 }
 
@@ -70,4 +73,4 @@ const prodName = 'JavaScript Course';
 const productPrice = 29.99;
 
 const productOutput = productDescription`This product (${prodName}) ist ${productPrice}`;
-console.log(productOutput);
+console.log('productOutput', productOutput);
