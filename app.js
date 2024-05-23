@@ -82,19 +82,25 @@
 // const productOutput = productDescription`This product (${prodName}) is ${productPrice}.`;
 // console.log('productOutput', productOutput);
 
-const regex = /^\S+@\S+\.\S+$/;
-console.log(regex.test('myemail')); // false
-console.log(regex.test('test@test.de')); // true
+// const regex = /^\S+@\S+\.\S+$/;
+// console.log(regex.test('myemail')); // false
+// console.log(regex.test('test@test.de')); // true
 
-const regex2 = /hello/;
-console.log(regex2.test('hello')); // true
-console.log(regex2.test('hi there, hello')); // true
-console.log(regex2.test('hi there, hello ...')); // true
-console.log(regex2.test('Hello')); // false
+// const regex2 = /hello/;
+// console.log(regex2.test('hello')); // true
+// console.log(regex2.test('hi there, hello')); // true
+// console.log(regex2.test('hi there, hello ...')); // true
+// console.log(regex2.test('Hello')); // false
 
-const regex3 = /(h|H)ello/;
-console.log(regex3.test('hello')); // true
-console.log(regex3.test('Hello')); // true
-console.log(regex3.test('hi - hello')); // true
-console.log(regex3.test('hi - hello ...')); // true
-console.log(regex3.test('hi - Hello ...')); // true
+// const regex3 = /(h|H)ello/;
+// console.log(regex3.test('hello')); // true
+// console.log(regex3.test('Hello')); // true
+// console.log(regex3.test('hi - hello')); // true
+// console.log(regex3.test('hi - hello ...')); // true
+// console.log(regex3.test('hi - Hello ...')); // true
+
+const regex4 = /.ello/
+console.log(regex4.test('hello')); // true
+console.log(regex4.test('ello')); // false
+console.log(regex4.test('Jello')); // true
+console.log(regex4.test('   Jello')); // true
