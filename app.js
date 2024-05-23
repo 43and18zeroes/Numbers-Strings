@@ -99,7 +99,7 @@
 // console.log(regex3.test('hi - hello ...')); // true
 // console.log(regex3.test('hi - Hello ...')); // true
 
-const regex4 = /.ello/
+const regex4 = /.ello/ // 5 character word, but starting character random (wildcard)
 console.log(regex4.test('hello')); // true
 console.log(regex4.test('ello')); // false
 console.log(regex4.test('Jello')); // true
