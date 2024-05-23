@@ -104,3 +104,9 @@ console.log(regex4.test('hello')); // true
 console.log(regex4.test('ello')); // false
 console.log(regex4.test('Jello')); // true
 console.log(regex4.test('   Jello')); // true
+
+// Escaping the dot:
+// /\./
+
+// Any word:
+// /\S/
