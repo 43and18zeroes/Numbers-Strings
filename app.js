@@ -110,3 +110,18 @@ console.log(regex4.test('   Jello')); // true
 
 // Any word:
 // /\S/
+
+// exec shows you where in a string a pattern is matched
+console.log(regex4.exec('jello'));
+// 0: "jello"
+// groups: undefined
+// index: 0
+// input: "jello"
+// length: 1
+console.log(regex4.exec('Hi! jello'));
+// 0: "jello"
+// groups: undefined
+// index: 4
+// input: "Hi! jello"
+// length: 1
+
